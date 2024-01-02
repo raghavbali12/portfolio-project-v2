@@ -7,9 +7,10 @@ function ImageBox(props: {source: string, horizontalAlignment?: string, vertical
     const isVisible = useIsInViewport(ref);
 
     return (
-        <div ref={ref} className={`${props.verticalAlignment === "bottom" ? 'content-image-bottom' : ''}`}>
+        <div className={`${props.verticalAlignment === "bottom" ? 'content-image-bottom' : ''}`}>
             <Fade in={isVisible} appear={true} timeout={5000}>
                 <Box 
+                    ref={ref}
                     className=
                     {`content-image 
                     ${props.horizontalAlignment === "left" ? 'content-image-left' : props.horizontalAlignment === "right" ? 'content-image-right' : ''}`}
