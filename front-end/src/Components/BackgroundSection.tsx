@@ -11,17 +11,14 @@ function BackgroundSection() {
     return (
         <div>
             <Box className="content-box-section">
-            <Box>
-                <Typography className="content-box-section-header content-text" variant="h3">Background</Typography>
-            </Box>
-            <Box className="content-box-image-left">
-                <ImageBox source={ChildhoodPicture} />
-            </Box>
-            <Box>
-                <Typography 
-                    variant="h5" 
-                    className="content-text content-text-image-offset"
-                >
+            <Typography className="content-box-section-header content-text" variant="h3">Background</Typography>
+            <Box className="content-flex-container">
+                <ImageBox source={ChildhoodPicture} horizontalAlignment="left" />
+                <Box>
+                    <Typography 
+                        variant="h5" 
+                        className="content-text"
+                    >
                     I was originally born in Bangalore in the south of India.
                     My dad worked as an executive for a number of global businesses,
                     so we would move a lot in my early childhood. My mum, dad, older sister
@@ -39,10 +36,9 @@ function BackgroundSection() {
                     re-learning my native tongue. <br />
                     I lived in Delhi until 2014, at which point I went back to the United States to attend
                     college at Haverford College in Pennsylvania.
-                </Typography>
-            </Box>
-            <Box className="content-box-image-right">
-                <ImageBox source={IndiaPicture} />
+                    </Typography>
+                </Box>
+                <ImageBox source={IndiaPicture} horizontalAlignment="right" verticalAlignment="bottom" />
             </Box>
             </Box>
         </div>

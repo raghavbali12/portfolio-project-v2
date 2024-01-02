@@ -74,10 +74,10 @@
 }
 
 .content-box-section {
-    display: grid;
-    /* margin-left: -20vw;
-    margin-right: -20vw; */
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-box-image-left {
@@ -112,14 +112,26 @@
     font-family: Bricolage Grotesque !important;
 }
 
-.content-text-image-offset {
-    margin-top: -300px !important;
-}
-
 .content-image {
     border-radius: 10px;
     width: 225px;
     height: 300px;
+    
+}
+
+.content-image-left {
+    position: absolute;
+    left: 5%;
+}
+
+.content-image-right {
+    position: absolute;
+    right: 5%;
+}
+
+.content-image-bottom {
+    display: flex;
+    align-items: flex-end;
 }
 
 .full-width {
@@ -130,4 +142,9 @@
 	position: relative;
 	right: 50%;
 	width: 10vw;
+}
+
+.content-flex-container {
+    display: flex;
+    align-self: flex-start;
 }
