@@ -4,7 +4,9 @@ function IntroText() {
     return (
         <Typography 
             className="content-text"
+            variant="h5"
             paddingTop={2}
+            paddingBottom={10}
             >
             Hi. My name is Raghav Bali, welcome to my website.
             I am a Full Stack Software Developer with a focus on
