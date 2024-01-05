@@ -1,25 +1,16 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState, useEffect } from 'react';
 import './style.css';
-import Greeting from './Components/Greeting';
-import Navbar from './Components/Navbar';
-import Smoke from './Content/Videos/smoke-loop.mp4'
-import ContentBox from './Components/ContentBox';
-import ResourceBox from './Components/ResourceBox';
-import { useIsInViewport } from './HelperFunctions/useIsInViewport';
+import { Box, Typography } from '@mui/material';
 
 function App() {
 
   return (
-    <div className='fullscreen-bg'>
-			<video loop muted autoPlay className="fullscreen-bg_video">
-            <source src={Smoke} type="video/mp4" />
-      </video>
-      <div>
-        <Greeting />
-        <ResourceBox />
-        <ContentBox />
+      <div className='box'>
+        <Typography variant="h3" component="div" gutterBottom color="#09111b" position="absolute" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', paddingTop: '5%', paddingLeft: '5%', width: '100%', height: '100%', zIndex: 1, textShadow: '0px -4px 4px rgba(19, 17, 27, 1)' }}>
+          Hello World
+        </Typography>
+        <span></span>
       </div>
-    </div>
   );
 }
 
