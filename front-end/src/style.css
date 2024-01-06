@@ -14,7 +14,7 @@ body {
 
 .box {
     position: relative;
-    width: 1254px;
+    width: 1061px;
     height: 100vh;
 }
 
@@ -23,39 +23,31 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: url('./Content//Images/bright.png');
+    background: url('./Content//Images/100-percent.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: animate1 2s linear 1, animate2 1s linear 1 2s, animate1 4s linear 1 3s, animate2 1s linear 1 7s, animate3 2s linear 1 8s;
+    animation: animate1 4s linear 1
 }
 
 @keyframes animate1 {
-    0%, 100% {
-        background: url('./Content//Images/off.png') no-repeat center;
-    }
-
-    50% {
-        background: url('./Content//Images/on.png') no-repeat center;
-    }
-}
-
-@keyframes animate2 {
-    0%, 100% {
-        background: url('./Content//Images/off.png') no-repeat center;
-    }
-}
-
-@keyframes animate3 {
     0% {
         background: url('./Content//Images/off.png') no-repeat center;
     }
 
+    25% {
+        background: url('./Content//Images/25-percent.png') no-repeat center;
+    }
+
     50% {
-        background: url('./Content//Images/on.png') no-repeat center;
+        background: url('./Content//Images/50-percent.png') no-repeat center;
+    }
+
+    75% {
+        background: url('./Content//Images/75-percent.png') no-repeat center;
     }
 
     100% {
-        background: url('./Content//Images/bright.png') no-repeat center;
+        background: url('./Content//Images/100-percent.png') no-repeat center;
     }
 }
