@@ -12,22 +12,16 @@ body {
     background-color: #09111b;
 }
 
-.box {
-    position: relative;
-    width: 1061px;
-    height: 100vh;
-}
-
-.box span::before {
+ .landing-page {
     content: '';
-    position: absolute;
-    width: 100%;
+    position: relative;
+    width: 1430px;
     height: 100vh;
     background: url('./Content//Images/100-percent.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: animate1 4s linear 1
+    animation: animate1 3s linear 1
 }
 
 @keyframes animate1 {
@@ -35,16 +29,8 @@ body {
         background: url('./Content//Images/off.png') no-repeat center;
     }
 
-    25% {
-        background: url('./Content//Images/25-percent.png') no-repeat center;
-    }
-
     50% {
         background: url('./Content//Images/50-percent.png') no-repeat center;
-    }
-
-    75% {
-        background: url('./Content//Images/75-percent.png') no-repeat center;
     }
 
     100% {
