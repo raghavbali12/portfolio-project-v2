@@ -10,7 +10,7 @@ function Navbar() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoaded(true);
-        }, 2000);
+        }, 1000);
 
         return () => clearTimeout(timer); // cleanup on unmount
     }, []);
