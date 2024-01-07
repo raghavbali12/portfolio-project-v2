@@ -1,11 +1,17 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 function LandingPage() {
   return (
     <div className="landing-page">
-        <Typography variant="h3" component="div" gutterBottom color="#09111b" position="absolute" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', paddingTop: '5%', width: '100%', height: '100%', zIndex: 1, textShadow: '0px -4px 4px rgba(19, 17, 27, 1)' }}>
-            Hello World
-        </Typography>
+        <Box display='block'>
+            <Typography className="landing-page-text" paddingTop="7%" variant="h3" color="#09111b">
+                Hi, my name is Raghav Bali
+            </Typography>
+            <Typography className="landing-page-text" marginTop="2%" variant="h5" color="#09111b">
+                I'm a software developer from Madison, Wisconsin. <br />
+                Learn more about me by exploring my website!
+            </Typography>
+        </Box>
     </div>
   );
 }
