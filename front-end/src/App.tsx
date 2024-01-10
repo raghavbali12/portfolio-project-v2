@@ -3,7 +3,6 @@ import LandingPage from "./Components/LandingPage";
 import createTheme from "@mui/material/styles/createTheme";
 import { ThemeProvider } from "@mui/material/styles";
 
-// Or Create your Own theme:
 const theme = createTheme({
   palette: {
     primary: {
@@ -19,6 +18,15 @@ const theme = createTheme({
         },
         arrow: {
           color: "#09111b",
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: "#09111b",
+          fontFamily: "'Nunito-Regular'",
+          fontWeight: 700,
         },
       },
     },
