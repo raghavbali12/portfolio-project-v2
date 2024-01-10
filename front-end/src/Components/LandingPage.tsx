@@ -40,15 +40,38 @@ function LandingPage() {
         </Fade>
         {showLightButtons && (
           <Fade in={true} timeout={3000}>
-            <div style={{ marginLeft: "20%", marginTop: "10%" }}>
+            <Box
+              display="flex"
+              justifyContent="space-evenly"
+              marginLeft="20%"
+              marginRight="20%"
+              marginTop="2%"
+            >
               <Button
                 variant="contained"
                 color="primary"
                 className="light-button"
+                sx={{ marginTop: "20%" }}
               >
                 Background
               </Button>
-            </div>
+              <Button
+                variant="contained"
+                color="primary"
+                className="light-button"
+                sx={{ marginBottom: "20%" }}
+              >
+                Work Experience
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                className="light-button"
+                sx={{ marginTop: "20%" }}
+              >
+                Hobbies
+              </Button>
+            </Box>
           </Fade>
         )}
       </Box>
