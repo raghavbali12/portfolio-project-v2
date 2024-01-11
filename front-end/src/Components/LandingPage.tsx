@@ -34,44 +34,50 @@ function LandingPage() {
           Learn more about me by exploring my website!
         </Typography>
         <Fade in={true} timeout={3000}>
-          <div style={{ marginTop: "2%" }}>
+          <div style={{ marginTop: "1%" }}>
             <ResourceBox />
           </div>
         </Fade>
         {showLightButtons && (
           <Fade in={true} timeout={3000}>
-            <Box
-              display="flex"
-              justifyContent="space-evenly"
-              marginLeft="20%"
-              marginRight="20%"
-              marginTop="2%"
-            >
-              <Button
-                variant="contained"
-                color="primary"
-                className="light-button"
-                sx={{ marginTop: "20%" }}
+            <div>
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                marginTop="2%"
               >
-                Background
-              </Button>
-              <Button
-                variant="contained"
-                color="primary"
-                className="light-button"
-                sx={{ marginBottom: "20%" }}
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className="light-button"
+                >
+                  Work Experience
+                </Button>
+              </Box>
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                marginTop="2%"
               >
-                Work Experience
-              </Button>
-              <Button
-                variant="contained"
-                color="primary"
-                className="light-button"
-                sx={{ marginTop: "20%" }}
-              >
-                Hobbies
-              </Button>
-            </Box>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className="light-button"
+                >
+                  Background
+                </Button>
+
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className="light-button"
+                >
+                  Hobbies
+                </Button>
+              </Box>
+            </div>
           </Fade>
         )}
       </Box>
