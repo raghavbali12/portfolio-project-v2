@@ -1,6 +1,7 @@
 import { Box, Button, Fade, Typography } from "@mui/material";
 import ResourceBox from "./ResourceBox";
 import { useState, useEffect } from "react";
+import ProfilePicture from "./ProfilePicture";
 
 function LandingPage() {
   const [showLightButtons, setShowLightButtons] = useState(false);
@@ -24,9 +25,14 @@ function LandingPage() {
         >
           Hi, my name is Raghav Bali
         </Typography>
+        <Fade in={true} timeout={4000}>
+          <div style={{ marginTop: "1%" }}>
+            <ProfilePicture />
+          </div>
+        </Fade>
         <Typography
           className="landing-page-text"
-          marginTop="2%"
+          marginTop="1%"
           variant="h5"
           color="#09111b"
         >
@@ -45,7 +51,7 @@ function LandingPage() {
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                marginTop="2%"
+                marginTop="3%"
               >
                 <Button
                   variant="contained"
@@ -57,6 +63,7 @@ function LandingPage() {
               </Box>
               <Box
                 display="flex"
+                flexDirection="column"
                 justifyContent="center"
                 alignItems="center"
                 marginTop="2%"
@@ -68,7 +75,14 @@ function LandingPage() {
                 >
                   Background
                 </Button>
-
+              </Box>
+              <Box
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                marginTop="2%"
+              >
                 <Button
                   variant="contained"
                   color="primary"
