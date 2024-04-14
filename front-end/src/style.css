@@ -44,6 +44,38 @@ body {
     }
 }
 
+.profile-picture {
+    display: flex;
+    background: url('./Content//Images/Headshot.jpeg');
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    animation: animate2 3s linear 1
+}
+
+@keyframes animate2 {
+    0% {
+        background: url('./Content//Images/Headshot_Partial.png') no-repeat center;
+    }
+
+    50% {
+        background: url('./Content//Images/Headshot_Partial.png') no-repeat center;
+    }
+
+    80% {
+        background: url('./Content//Images/Headshot.jpeg') no-repeat center;
+    }
+
+    100% {
+        background: url('./Content//Images/Headshot.jpeg') no-repeat center;
+    }
+}
+
 .landing-page-text {
     position: relative;
     text-align: center;

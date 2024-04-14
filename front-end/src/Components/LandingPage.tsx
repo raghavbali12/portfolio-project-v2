@@ -26,7 +26,13 @@ function LandingPage() {
           Hi, my name is Raghav Bali
         </Typography>
         <Fade in={true} timeout={4000}>
-          <div style={{ marginTop: "1%" }}>
+          <div
+            style={{
+              marginTop: "1%",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <ProfilePicture />
           </div>
         </Fade>
@@ -49,6 +55,7 @@ function LandingPage() {
             <div>
               <Box
                 display="flex"
+                flexDirection="column"
                 justifyContent="center"
                 alignItems="center"
                 marginTop="3%"
@@ -60,36 +67,29 @@ function LandingPage() {
                 >
                   Work Experience
                 </Button>
-              </Box>
-              <Box
-                display="flex"
-                flexDirection="column"
-                justifyContent="center"
-                alignItems="center"
-                marginTop="2%"
-              >
-                <Button
-                  variant="contained"
-                  color="primary"
-                  className="light-button"
+                <Box
+                  display="flex"
+                  justifyContent="space-between"
+                  width="600px" // Adjust this value to increase or decrease the space between the buttons
+                  marginTop="2%"
                 >
-                  Background
-                </Button>
-              </Box>
-              <Box
-                display="flex"
-                flexDirection="column"
-                justifyContent="center"
-                alignItems="center"
-                marginTop="2%"
-              >
-                <Button
-                  variant="contained"
-                  color="primary"
-                  className="light-button"
-                >
-                  Hobbies
-                </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    className="light-button"
+                    style={{ width: "220px" }} // Adjust this value to increase or decrease the width of the button
+                  >
+                    Background
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    className="light-button"
+                    style={{ width: "220px" }} // Adjust this value to increase or decrease the width of the button
+                  >
+                    Hobbies
+                  </Button>
+                </Box>
               </Box>
             </div>
           </Fade>
