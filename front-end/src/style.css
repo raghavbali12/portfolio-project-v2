@@ -111,3 +111,14 @@ body {
     font-size: x-large !important;
     font-weight: 500 !important;
 }
+
+.background-page {
+    content: '';
+    position: relative;
+    width: 1430px;
+    height: 100vh;
+    background: url('./Content//Images/100-percent.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

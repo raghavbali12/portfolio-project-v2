@@ -2,9 +2,11 @@ import { Box, Button, Fade, Typography } from "@mui/material";
 import ResourceBox from "./ResourceBox";
 import { useState, useEffect } from "react";
 import ProfilePicture from "./ProfilePicture";
+import { useNavigate } from "react-router-dom";
 
 function LandingPage() {
   const [showLightButtons, setShowLightButtons] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -78,6 +80,7 @@ function LandingPage() {
                     color="primary"
                     className="light-button"
                     style={{ width: "220px" }} // Adjust this value to increase or decrease the width of the button
+                    onClick={() => navigate("/background")}
                   >
                     Background
                   </Button>
