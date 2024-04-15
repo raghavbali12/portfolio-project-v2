@@ -115,10 +115,18 @@ body {
 .background-page {
     content: '';
     position: relative;
-    width: 1430px;
-    height: 100vh;
+    width: calc(var(--vw, 1vw) * 100);
+    height: 300vh;
     background: url('./Content//Images/100-percent.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.picture-box {
+    height: 500px;
+    width: 300px;
+    margin-left:7%;
+    padding-top:2%;
 }
