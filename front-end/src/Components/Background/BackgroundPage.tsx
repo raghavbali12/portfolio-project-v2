@@ -3,6 +3,7 @@ import Xarrow, { Xwrapper } from "react-xarrows";
 import PictureBox from "./PictureBox";
 import childhood from "../../Content/Images/childhood-pic.jpg";
 import india from "../../Content/Images/india-pic.jpeg";
+import haverford from "../../Content/Images/haverford.jpeg";
 import text from "../../Content/Text/BackgroundText.json";
 import { useEffect } from "react";
 
@@ -30,11 +31,20 @@ function BackgroundPage() {
                 paddingTop: "3%",
               }}
             >
-              <div id="childhood">
+              <div>
                 <PictureBox
+                  id="childhood"
                   picture={childhood}
                   cardPreview={text.childhood.preview}
                   cardContent={text.childhood.content}
+                />
+              </div>
+              <div style={{ marginTop: "20%" }}>
+                <PictureBox
+                  id="haverford"
+                  picture={haverford}
+                  cardPreview={text.haverford.preview}
+                  cardContent={text.haverford.content}
                 />
               </div>
             </div>
@@ -45,16 +55,31 @@ function BackgroundPage() {
                 paddingTop: "20%",
               }}
             >
-              <div id="india">
+              <div>
                 <PictureBox
+                  id="india"
                   picture={india}
                   cardPreview={text.india.preview}
                   cardContent={text.india.content}
                 />
               </div>
             </div>
-            {/* TODO: Fix so that arrows do not move when expanding cards */}
-            <Xarrow start={"childhood"} end={"india"} />
+            <Xarrow
+              start={"childhood"}
+              end={"india"}
+              color="black"
+              dashness={true}
+              startAnchor={"right"}
+              endAnchor={"left"}
+            />
+            <Xarrow
+              start={"india"}
+              end={"haverford"}
+              color="black"
+              dashness={true}
+              startAnchor={"left"}
+              endAnchor={"right"}
+            />
           </Xwrapper>
         </div>
       </Fade>

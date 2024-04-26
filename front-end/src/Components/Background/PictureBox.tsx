@@ -7,18 +7,29 @@ import {
   Collapse,
 } from "@mui/material";
 import { useState } from "react";
+import { useXarrow } from "react-xarrows";
+import { callPeriodically } from "../../HelperFunctions/callPeriodically";
 
 function PictureBox(props: {
+  id: string;
   picture: any;
   cardPreview: string;
   cardContent: string;
 }) {
   const [expanded, setExpanded] = useState(false);
 
+  const updateXarrow = useXarrow();
+
+  const handleClick = async () => {
+    setExpanded(!expanded);
+    callPeriodically(updateXarrow, 100, 10);
+  };
+
   return (
     <div>
       <Box className="picture-box">
         <Box
+          id={props.id}
           component="img"
           alt="Childhood picture."
           src={props.picture}
@@ -39,7 +50,7 @@ function PictureBox(props: {
             <CardContent>{props.cardContent}</CardContent>
           </Collapse>
           <CardActions sx={{ justifyContent: "center" }}>
-            <Button size="small" onClick={() => setExpanded(!expanded)}>
+            <Button size="small" onClick={handleClick}>
               {!expanded ? "Read More" : "Collapse"}
             </Button>
           </CardActions>
