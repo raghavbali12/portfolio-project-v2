@@ -20,7 +20,7 @@ function LandingPage() {
     <div className="landing-page">
       <Box display="block">
         <Typography
-          className="landing-page-text"
+          className="title-text"
           paddingTop="5%"
           variant="h3"
           color="#09111b"
@@ -39,7 +39,7 @@ function LandingPage() {
           </div>
         </Fade>
         <Typography
-          className="landing-page-text"
+          className="title-text"
           marginTop="1%"
           variant="h5"
           color="#09111b"

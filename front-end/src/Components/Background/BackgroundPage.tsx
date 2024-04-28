@@ -1,4 +1,4 @@
-import { Box, Button, Fade } from "@mui/material";
+import { Fade, Typography } from "@mui/material";
 import Xarrow, { Xwrapper } from "react-xarrows";
 import PictureBox from "./PictureBox";
 import childhood from "../../Content/Images/childhood-pic.jpg";
@@ -24,6 +24,26 @@ function BackgroundPage() {
   return (
     <div className="background-page">
       <Fade in={true} timeout={2000}>
+        <div>
+          <Typography
+            className="title-text"
+            variant="h3"
+            color="#09111b"
+            paddingTop="5%"
+          >
+            My Background
+          </Typography>
+          <Typography
+            className="title-text"
+            variant="h5"
+            color="#09111b"
+            paddingTop="2%"
+          >
+            Learn more about me by exploring my journey!
+          </Typography>
+        </div>
+      </Fade>
+      <Fade in={true} timeout={5000}>
         <div style={{ display: "flex" }}>
           <Xwrapper>
             <div
@@ -31,6 +51,7 @@ function BackgroundPage() {
                 flex: 1,
                 paddingLeft: "3%",
                 marginTop: "3%",
+                marginBottom: "3%",
               }}
             >
               <div>
