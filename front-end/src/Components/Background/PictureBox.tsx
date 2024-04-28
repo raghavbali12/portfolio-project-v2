@@ -28,17 +28,40 @@ function PictureBox(props: {
   return (
     <div>
       <Box className="picture-box">
+        <Box id={props.id} component="img" alt={props.id} src={props.picture} />
         <Box
-          id={props.id}
-          component="img"
-          alt="Childhood picture."
-          src={props.picture}
           sx={{
-            height: "70%",
+            position: "absolute",
+            top: 0,
+            left: 0,
             width: "100%",
-            objectFit: "cover",
+            height: "500px",
+            backgroundColor: "transparent",
           }}
-        />
+        >
+          <Box
+            id={props.id + "Top"}
+            sx={{
+              position: "absolute",
+              top: "50%",
+              left: 0,
+              width: "100%",
+              height: "2%",
+              backgroundColor: "transparent",
+            }}
+          />
+          <Box
+            id={props.id + "Bottom"}
+            sx={{
+              position: "absolute",
+              top: "55%",
+              left: 0,
+              width: "100%",
+              height: "2%",
+              backgroundColor: "transparent",
+            }}
+          />
+        </Box>
         <Card
           sx={{
             height: "auto",

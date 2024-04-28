@@ -4,6 +4,8 @@ import PictureBox from "./PictureBox";
 import childhood from "../../Content/Images/childhood-pic.jpg";
 import india from "../../Content/Images/india-pic.jpeg";
 import haverford from "../../Content/Images/haverford.jpeg";
+import madison from "../../Content/Images/madison.jpeg";
+import world_of_dance from "../../Content/Images/world-of-dance.jpeg";
 import text from "../../Content/Text/BackgroundText.json";
 import { useEffect } from "react";
 
@@ -28,7 +30,7 @@ function BackgroundPage() {
               style={{
                 flex: 1,
                 paddingLeft: "3%",
-                paddingTop: "3%",
+                marginTop: "3%",
               }}
             >
               <div>
@@ -39,7 +41,7 @@ function BackgroundPage() {
                   cardContent={text.childhood.content}
                 />
               </div>
-              <div style={{ marginTop: "20%" }}>
+              <div style={{ paddingTop: "100%" }}>
                 <PictureBox
                   id="haverford"
                   picture={haverford}
@@ -47,12 +49,20 @@ function BackgroundPage() {
                   cardContent={text.haverford.content}
                 />
               </div>
+              <div style={{ paddingTop: "100%" }}>
+                <PictureBox
+                  id="world-of-dance"
+                  picture={world_of_dance}
+                  cardPreview={text["world-of-dance"].preview}
+                  cardContent={text["world-of-dance"].content}
+                />
+              </div>
             </div>
             <div
               style={{
                 flex: 1,
                 paddingLeft: "50%",
-                paddingTop: "20%",
+                marginTop: "20%",
               }}
             >
               <div>
@@ -63,18 +73,42 @@ function BackgroundPage() {
                   cardContent={text.india.content}
                 />
               </div>
+              <div style={{ marginTop: "100%" }}>
+                <PictureBox
+                  id="madison"
+                  picture={madison}
+                  cardPreview={text.madison.preview}
+                  cardContent={text.madison.content}
+                />
+              </div>
             </div>
             <Xarrow
-              start={"childhood"}
-              end={"india"}
+              start={"childhoodBottom"}
+              end={"indiaTop"}
               color="black"
               dashness={true}
               startAnchor={"right"}
               endAnchor={"left"}
             />
             <Xarrow
-              start={"india"}
-              end={"haverford"}
+              start={"indiaBottom"}
+              end={"haverfordTop"}
+              color="black"
+              dashness={true}
+              startAnchor={"left"}
+              endAnchor={"right"}
+            />
+            <Xarrow
+              start={"haverfordBottom"}
+              end={"madisonTop"}
+              color="black"
+              dashness={true}
+              startAnchor={"right"}
+              endAnchor={"left"}
+            />
+            <Xarrow
+              start={"madisonBottom"}
+              end={"world-of-danceTop"}
               color="black"
               dashness={true}
               startAnchor={"left"}
