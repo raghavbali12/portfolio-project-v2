@@ -33,13 +33,8 @@ function BackgroundPage() {
           >
             My Background
           </Typography>
-          <Typography
-            className="title-text"
-            variant="h5"
-            color="#09111b"
-            paddingTop="2%"
-          >
-            Learn more about me by exploring my journey!
+          <Typography className="title-text" variant="h5" color="#09111b">
+            Follow along on my journey
           </Typography>
         </div>
       </Fade>
