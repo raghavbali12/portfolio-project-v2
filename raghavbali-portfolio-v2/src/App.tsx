@@ -13,7 +13,7 @@ function App() {
           fontSize="3xl"
           justifyContent="center"
           alignItems="center"
-          bgGradient={`linear(to-l, brand.primary, brand.secondary)`}
+          bgGradient={`linear(to-r, brand.primary, brand.tertiary)`}
         >
           Hello!
         </Flex>
